@@ -22,7 +22,7 @@
             "LEFT_SIZE": "18",
             "RIGHT_SIZE": "18",
             "SUM" : 6,
-            "TARGET" : 0
+            "TARGET" : 1
         },
         {
             "DIRECTION": "vertical",
@@ -34,7 +34,7 @@
             "LEFT_SIZE": "18",
             "RIGHT_SIZE": "18",
             "SUM" : 6,
-            "TARGET" : 1
+            "TARGET" : 2
         },
         {
             "DIRECTION": "vertical",
@@ -46,7 +46,7 @@
             "LEFT_SIZE": "18",
             "RIGHT_SIZE": "18",
             "SUM" : 6,
-            "TARGET" : 2
+            "TARGET" : 3
         }
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "CHROMEDRIVER_PATH" : "./chromedriver-mac-x64/chromedriver",
+    "CHROMEDRIVER_PATH" : "./chromedriver",
     "WAY" : "url",
     "URL_or_HTML" : "https://kmamiz-demo.soselab.tw/insights",
     "WINDOW_SIZE": {
@@ -20,7 +20,7 @@
             "LEFT_RATIO" : "(67/1200)",
             "RIGHT_RATIO" : "(66.5/1200)",
             "SUM" : 6,
-            "TARGET" : 4
+            "TARGET" : 0
         },
         {
             "DIRECTION": "vertical",
@@ -30,7 +30,7 @@
             "LEFT_RATIO" : "(60/1200)",
             "RIGHT_RATIO" : "(70/1200)",
             "SUM" : 6,
-            "TARGET" : 3
+            "TARGET" : 1
         },
         {
             "DIRECTION": "vertical",
@@ -40,7 +40,7 @@
             "LEFT_RATIO" : "(118/1200)",
             "RIGHT_RATIO" : "(70/1200)",
             "SUM" : 6,
-            "TARGET" : 3
+            "TARGET" : 2
         }
     ]
 }
