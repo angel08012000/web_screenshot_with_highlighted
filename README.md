@@ -24,7 +24,7 @@ Btw 特別適合用於呈現數據之網站！<br>
   - `CSS_SELECTOR` → 欲抓取元素的 css selector
   - `HIDDEN_CSS_SELECTOR` → 是一個陣列，欲隱藏元素之所有 css selector（因為有可能擋到相關＆重要資訊）
     若沒有需要隱藏之元素，就放空陣列即可
-  - `WIDTH`, `HEIGHT` → 該元素之寬、高 **（由系統提供）**
+  - `WIDTH`, `HEIGHT` → 該元素之寬、高 **（由系統提供）** <br>
     <img width="518" alt="截圖 2023-07-18 上午12 59 36" src="https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/32b329b3-cf9f-4cbf-a4de-d5d5a15163fc">
 
 - 相關資訊
@@ -36,7 +36,7 @@ Btw 特別適合用於呈現數據之網站！<br>
     - `TOP_RATIO` → 上方需裁切之比例
     - `BOTTOM_RATIO` → 下方需裁切之比例
     - `LEFT_RATIO` → 左邊需裁切之比例
-    - `RIGHT_RATIO` → 右邊需裁切之比例
+    - `RIGHT_RATIO` → 右邊需裁切之比例 <br>
     <img width="518" alt="截圖 2023-07-18 上午12 57 17" src="https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/c830695b-0f27-49a0-b03b-c33e7c478b3a">
 
 - 重要資訊
