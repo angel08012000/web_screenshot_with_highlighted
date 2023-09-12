@@ -78,5 +78,20 @@ path: setting/xxx.json
 ```
 
 ## 演算法
+1. 讀取參數檔的參數
+2. 判斷是用 url 還是 html 開啟網頁
+3. 利用 chromedriver 開啟網頁
+4. 利用 chromedriver 找定欲圈選之網頁元素
+5. 檢查`「欲抓取之元素數量」`＆`「使用者提供參數數量」` 是否相符
+   若不符，則印出錯誤訊息並 return
+6. 試著隱藏、切換指定元素
+   若失敗，則印出錯誤訊息並結束
+7. 利用「使用者提供之參數」截圖＆圈選重要資訊，並存成 PNG 檔
 
 ## 可客製化調整部份
+在演算法的步驟6中，我們提供了一個 `custom_function(self, driver, param)`
+在這個 function 裡，你可以根據你的情況自由調整！
+
+我們也提供了另外兩個 function
+- `find_and_hide_elements(self, driver, param)` → 尋找並隱藏指定元素
+- `find_and_toggle_element(self, driver, param)` → 尋找並切換指定元素
