@@ -128,8 +128,8 @@ class Highlighted():
         BOTTOM_RATIO = eval(IMAGES_PARAM[i]["BOTTOM_RATIO"])
         LEFT_RATIO = eval(IMAGES_PARAM[i]["LEFT_RATIO"])
         RIGHT_RATIO = eval(IMAGES_PARAM[i]["RIGHT_RATIO"])
-        SUM = IMAGES_PARAM[i]["SUM"]
-        TARGET = IMAGES_PARAM[i]["TARGET"]
+        SUM = eval(IMAGES_PARAM[i]["SUM"])
+        TARGET = eval(IMAGES_PARAM[i]["TARGET"])
 
         #---------- 如果是 KMamiz.html 的話 START ----------#
         # LEFT_SIZE = eval(IMAGES_PARAM[i]["LEFT_SIZE"])

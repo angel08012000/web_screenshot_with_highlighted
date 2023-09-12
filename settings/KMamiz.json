@@ -19,8 +19,8 @@
             "BOTTOM_RATIO" : "0.03",
             "LEFT_RATIO" : "(67/1200)",
             "RIGHT_RATIO" : "(66.5/1200)",
-            "SUM" : 6,
-            "TARGET" : 0
+            "SUM" : "6",
+            "TARGET" : "0"
         },
         {
             "DIRECTION": "vertical",
@@ -29,8 +29,8 @@
             "BOTTOM_RATIO" : "0.03",
             "LEFT_RATIO" : "(60/1200)",
             "RIGHT_RATIO" : "(70/1200)",
-            "SUM" : 6,
-            "TARGET" : 1
+            "SUM" : "6",
+            "TARGET" : "3"
         },
         {
             "DIRECTION": "vertical",
@@ -39,8 +39,8 @@
             "BOTTOM_RATIO" : "0.03",
             "LEFT_RATIO" : "(118/1200)",
             "RIGHT_RATIO" : "(70/1200)",
-            "SUM" : 6,
-            "TARGET" : 2
+            "SUM" : "6",
+            "TARGET" : "5"
         }
     ]
 }
