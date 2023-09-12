@@ -46,5 +46,37 @@ Btw 特別適合用於呈現數據之網站！<br>
     <img width="529" alt="截圖 2023-07-18 上午12 58 12" src="https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/9d3d2124-8ccc-4d6e-8bf3-b1c9f796965e">
 
 ## 參數設定檔
+將上述所提及之參數合併為一個 json 檔案
+
+path: setting/xxx.json
+```json
+{
+    "CHROMEDRIVER_PATH" : "<<chrome driver 的路徑>>",
+    "WAY" : "<<要抓取的模式，分為 url、html>>",
+    "URL_or_HTML" : "<<放 url 或者 html 的檔案位置>>",
+    "WINDOW_SIZE": {
+        "WIDTH": "<<欲開啟視窗的寬>>",
+        "HEIGHT": "<<欲開啟視窗的高>>"
+    },
+    "CSS_SELECTOR" : "<<要抓取元素的 css selector>>",
+    "HIDDEN_CSS_SELECTOR": ["<<要隱藏元素的 css selector>>"],
+    "TOGGLE_CSS_SELECTOR": ["<<要 toggle 元素的 css selector>>"],
+    "IMAGES_PATH" : "<<要存放照片的前綴路徑>>",
+    "IMAGES_PARAM" : [
+        {
+            "DIRECTION": "<<要使用的方向，分為直式（vertical）、橫式（horizontal）>>",
+            "IMAGE_NAME": "<<要存的照片名稱>>",
+            "TOP_RATIO" : "<<上方裁切比例>>", 
+            "BOTTOM_RATIO" : "<<下方裁切比例>>", 
+            "LEFT_RATIO" : "<<左側裁切比例>>", 
+            "RIGHT_RATIO" : "<<右側裁切比例>>",
+            "SUM" : "<<總共要平分成幾份>>",
+            "TARGET" : "<<要圈選的是在第幾份，從 0 開始>>"
+        },
+    ]
+}
+```
+
+## 演算法
 
 ## 可客製化調整部份
