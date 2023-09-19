@@ -44,7 +44,7 @@ class Highlighted():
         
         # 取得元素資訊
         elements = self.find_elements(driver, param)
-        if len(elements)!=len(IMAGES_PARAM):
+        if len(elements)!=len(IMAGES_PARAM) and highlighted:
             print("「欲抓取之元素數量」＆「參數數量」不符！")
             print(f"「欲抓取之元素數量」: {len(elements)}")
             print(f"「參數數量」: {len(IMAGES_PARAM)}")
@@ -52,7 +52,6 @@ class Highlighted():
 
         try:
             self.custom_function(driver, param)
-            #self.find_and_hide_elements(driver, param)
         except Exception as e:
             print("錯誤訊息：", e)
         
@@ -79,9 +78,7 @@ class Highlighted():
     def find_and_hide_elements(self, driver, param):
         if "HIDDEN_CSS_SELECTOR" in param:
             for name in param["HIDDEN_CSS_SELECTOR"]:
-                # print(f"name: {name}")
                 hidden_ele = driver.find_elements(By.CSS_SELECTOR, name)
-                # print(f"隱藏元素長度：{len(hidden_ele)}")
                 driver.execute_script("arguments[0].style.display='none';", hidden_ele[0])
 
     def find_and_toggle_element(self, driver, param):
@@ -166,7 +163,6 @@ class Highlighted():
     def custom_function(self, driver, param):
         self.find_and_hide_elements(driver, param)
         
-start_time = time.time()
 
 highlighted = Highlighted()
 # highlighted.screenshot_with_highlighted("Grade_html")
@@ -174,8 +170,3 @@ highlighted = Highlighted()
 highlighted.screenshot_with_highlighted("KMamiz", True)
 # highlighted.screenshot_with_highlighted("TradingEconomics")
 # # highlighted.screenshot_with_highlighted("Twse")
-
-end_time = time.time()
-run_time = end_time - start_time
-
-print(f"花費時間：{run_time:.2f} 秒")
