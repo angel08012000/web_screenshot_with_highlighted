@@ -11,7 +11,8 @@ Btw 特別適合用於呈現數據之網站！<br>
 
 ## 名詞、參數解釋
 一個網頁可以大致分為以下區塊：<br>
-<img width="518" alt="截圖 2023-07-18 上午12 09 42 (1)" src="https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/9c5c8427-23b2-4964-ba10-81f179362d2c">
+![all_elements](https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/86ad39c9-2bc8-4be0-8af2-8b16e951b936)
+
 
 - 網頁元素
   - `CHROMEDRIVER_PATH` → chromedriver 的路徑
@@ -25,7 +26,8 @@ Btw 特別適合用於呈現數據之網站！<br>
   - `HIDDEN_CSS_SELECTOR` → 是一個陣列，欲隱藏元素之所有 css selector（因為有可能擋到相關＆重要資訊）
     若沒有需要隱藏之元素，就放空陣列即可
   - `WIDTH`, `HEIGHT` → 該元素之寬、高 **（由系統提供）** <br>
-    <img width="518" alt="截圖 2023-07-18 上午12 59 36" src="https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/32b329b3-cf9f-4cbf-a4de-d5d5a15163fc">
+    ![web_element](https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/d5d53aaf-e53f-4dd7-8b30-1f7962e7f29b)
+
 
 - 相關資訊
   - `IMAGES_PATH` → 儲存的圖檔要放在哪
@@ -37,13 +39,15 @@ Btw 特別適合用於呈現數據之網站！<br>
     - `BOTTOM_RATIO` → 下方需裁切之比例
     - `LEFT_RATIO` → 左邊需裁切之比例
     - `RIGHT_RATIO` → 右邊需裁切之比例 <br>
-    <img width="518" alt="截圖 2023-07-18 上午12 57 17" src="https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/c830695b-0f27-49a0-b03b-c33e7c478b3a">
+    ![ratio](https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/8d8b3aa5-8571-4330-a82b-1e2e93444867)
+
 
 - 重要資訊
   - `IMAGES_PARAM` → 是一個字典陣列，可為每個元素客製化相關參數（跟相關資訊中的是同一個）
     - `SUM` → 要平均分成幾份
     - `TARGET` → 圈起來的重要資訊是在第幾份（從0開始）<br>
-    <img width="529" alt="截圖 2023-07-18 上午12 58 12" src="https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/9d3d2124-8ccc-4d6e-8bf3-b1c9f796965e">
+    ![important_information](https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/4a05bf2f-755f-4436-9bb1-c1411d8a5b55)
+
 
 ## 參數設定檔
 將上述所提及之參數合併為一個 json 檔案
