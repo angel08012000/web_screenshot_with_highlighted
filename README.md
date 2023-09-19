@@ -99,3 +99,12 @@ path: setting/xxx.json
 我們也提供了另外兩個 function
 - `find_and_hide_elements(self, driver, param)` → 尋找並隱藏指定元素
 - `find_and_toggle_element(self, driver, param)` → 尋找並切換指定元素
+
+## 使用方式
+``` python
+# main.py
+highlighted = Highlighted()
+
+#highlighted.screenshot_with_highlighted(檔案名稱, 是否要 highlighted)
+highlighted.screenshot_with_highlighted("KMamiz", True)
+```
