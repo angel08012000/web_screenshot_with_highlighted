@@ -9,9 +9,13 @@ from time import sleep
 import time
 import os
 
-class Highlighted():
-    def screenshot_with_highlighted(self, file_name, highlighted):
-        with open(f'settings/{file_name}.json', 'r') as file:
+class Highlighted:
+    def __init__(self, file_name, highlighted):
+        self.file_name = file_name
+        self.highlighted = highlighted
+    
+    def screenshot_with_highlighted(self):
+        with open(f'settings/{self.file_name}.json', 'r') as file:
             param = json.load(file)
             CHROMEDRIVER_PATH = param["CHROMEDRIVER_PATH"]
             WAY = param["WAY"]
@@ -44,7 +48,7 @@ class Highlighted():
         
         # 取得元素資訊
         elements = self.find_elements(driver, param)
-        if len(elements)!=len(IMAGES_PARAM) and highlighted:
+        if len(elements)!=len(IMAGES_PARAM) and self.highlighted:
             print("「欲抓取之元素數量」＆「參數數量」不符！")
             print(f"「欲抓取之元素數量」: {len(elements)}")
             print(f"「參數數量」: {len(IMAGES_PARAM)}")
@@ -58,7 +62,7 @@ class Highlighted():
         # 可以根據 highlighted(boolean) 來決定是否要 highlighted
         i=0
         for e in elements:
-            if highlighted:
+            if self.highlighted:
                 self.adjust_frame_size(driver, e, param, i)
             else:
                 self.screenshot(driver, e, param, i)
