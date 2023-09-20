@@ -102,9 +102,19 @@ path: setting/xxx.json
 
 ## 使用方式
 ``` python
-# main.py
-highlighted = Highlighted()
+# user.py
+import main as m
+
+class CustomHighlighted(m.Highlighted):
+    def __init__(self, file_name, highlighted):
+        self.file_name = file_name
+        self.highlighted = highlighted
+    
+    def custom_function(self, driver, param):
+        # you can custom code here
+        self.find_and_hide_elements(driver, param)
 
 #highlighted.screenshot_with_highlighted(檔案名稱, 是否要 highlighted)
-highlighted.screenshot_with_highlighted("KMamiz", True)
+c = CustomHighlighted("KMamiz", True)
+c.screenshot_with_highlighted()
 ```
