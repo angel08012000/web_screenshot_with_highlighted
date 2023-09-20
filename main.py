@@ -162,11 +162,3 @@ class Highlighted():
 
     def custom_function(self, driver, param):
         self.find_and_hide_elements(driver, param)
-        
-
-highlighted = Highlighted()
-# highlighted.screenshot_with_highlighted("Grade_html")
-# highlighted.screenshot_with_highlighted("KMamiz_html")
-highlighted.screenshot_with_highlighted("KMamiz", True)
-# highlighted.screenshot_with_highlighted("TradingEconomics")
-# # highlighted.screenshot_with_highlighted("Twse")
