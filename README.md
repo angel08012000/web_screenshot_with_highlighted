@@ -39,6 +39,8 @@ Btw 特別適合用於呈現數據之網站！<br>
     - `BOTTOM_RATIO` → 下方需裁切之比例
     - `LEFT_RATIO` → 左邊需裁切之比例
     - `RIGHT_RATIO` → 右邊需裁切之比例 <br>
+  
+    [註] 若單純截圖，則 IMAGES_PARAM 僅需包含 `IMAGE_NAME`
     ![ratio](https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/8d8b3aa5-8571-4330-a82b-1e2e93444867)
 
 
