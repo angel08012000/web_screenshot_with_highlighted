@@ -1,13 +1,13 @@
 # web_screenshot_with_highlighted
-該專案讓使用者僅需提供部分參數，即可圈選（optional）某個網頁上的重要資訊，並將之存為 PNG 圖檔。<br>
+該專案讓使用者僅需提供部分參數，即可圈選（optional）某個網頁上的重要資訊，並將之存為圖檔。<br>
 Btw 特別適合用於呈現數據之網站！<br>
 
 範例如下（[原始網站](https://kmamiz-demo.soselab.tw/insights)）：
 ![coupling](https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/ac7cab99-9632-428f-96fc-8dffbcd1c866)
 
 ## 功能
-- 截圖網頁元素，並將之存為 PNG 圖檔
-- 截圖網頁元素，並圈選重要資訊，再將之存為 PNG 圖檔
+- 截圖網頁元素，並將之存為圖檔
+- 截圖網頁元素，並圈選重要資訊，再將之存為圖檔
 
 ## 名詞、參數解釋
 一個網頁可以大致分為以下區塊：<br>
@@ -102,9 +102,19 @@ path: setting/xxx.json
 
 ## 使用方式
 ``` python
-# main.py
-highlighted = Highlighted()
+# user.py
+import main as m
+
+class CustomHighlighted(m.Highlighted):
+    def __init__(self, file_name, highlighted):
+        self.file_name = file_name
+        self.highlighted = highlighted
+    
+    def custom_function(self, driver, param):
+        # you can custom code here
+        self.find_and_hide_elements(driver, param)
 
 #highlighted.screenshot_with_highlighted(檔案名稱, 是否要 highlighted)
-highlighted.screenshot_with_highlighted("KMamiz", True)
+c = CustomHighlighted("KMamiz", True)
+c.screenshot_with_highlighted()
 ```
