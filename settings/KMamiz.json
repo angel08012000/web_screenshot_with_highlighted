@@ -9,7 +9,7 @@
     "HIDDEN_CSS_SELECTOR": [
         ".MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionFixed.mui-fixed.css-5poeop"
     ],
-    "CSS_SELECTOR" : ".MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.css-15j76c0",
+    "CSS_SELECTOR" : "#root > div.jss17 > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.jss42.css-s18byi > div:nth-child(3) > div:nth-child(2) > div > div > pre > code",
     "IMAGES_PATH" : "./images",
     "IMAGES_PARAM" : [
         {

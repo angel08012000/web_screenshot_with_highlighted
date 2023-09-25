@@ -48,7 +48,8 @@ class Highlighted:
         
         # 取得元素資訊
         elements = self.find_elements(driver, param)
-        if len(elements)!=len(IMAGES_PARAM) and self.highlighted:
+        # 就算單純截圖也要檢查，因為截圖完的照片需要檔名
+        if len(elements)!=len(IMAGES_PARAM):
             print("「欲抓取之元素數量」＆「參數數量」不符！")
             print(f"「欲抓取之元素數量」: {len(elements)}")
             print(f"「參數數量」: {len(IMAGES_PARAM)}")

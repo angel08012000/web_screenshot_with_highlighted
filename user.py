@@ -9,7 +9,7 @@ class CustomHighlighted(m.Highlighted):
         # you can custom code here
         self.find_and_hide_elements(driver, param)
 
-c = CustomHighlighted("KMamiz", True)
+c = CustomHighlighted("KMamiz_schema", False)
 # c = CustomHighlighted("KMamiz_html", True)
 # c = CustomHighlighted("Grade_html", True)
 # c = CustomHighlighted("TradingEconomics", True)
