@@ -50,7 +50,6 @@ Btw 特別適合用於呈現數據之網站！<br>
     - `TARGET` → 圈起來的重要資訊是在第幾份（從0開始）<br>
     ![important_information](https://github.com/angel08012000/web_screenshot_with_highlighted/assets/58464773/4a05bf2f-755f-4436-9bb1-c1411d8a5b55)
 
-
 ## 參數設定檔
 將上述所提及之參數合併為一個 json 檔案
 
@@ -101,6 +100,16 @@ path: setting/xxx.json
 我們也提供了另外兩個 function
 - `find_and_hide_elements(self, driver, param)` → 尋找並隱藏指定元素
 - `find_and_toggle_element(self, driver, param)` → 尋找並切換指定元素
+
+## 專案架構
+- env `你的環境`
+- requirements.txt
+- html `若抓取模式為 html，則將檔案放在該資料夾下`
+- settings `將參數設定檔放在該資料夾下`
+- images `若想將儲存的圖片放在該資料夾下，則 "IMAGES_PATH" : "./images"`
+- chromedriver `若無法使用，請自行下載對應的 chromedriver`
+- main.py
+- user.py `在這裡客製化你的程式`
 
 ## 使用方式
 ``` python
