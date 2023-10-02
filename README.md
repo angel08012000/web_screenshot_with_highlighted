@@ -112,6 +112,29 @@ path: setting/xxx.json
 - user.py `在這裡客製化你的程式`
 
 ## 使用方式
+clone 專案
+```
+git clone https://github.com/angel08012000/web_screenshot_with_highlighted.git
+```
+
+進入專案位置
+```
+cd <<該專案位置>>
+```
+
+處理環境
+```
+pip3 install virtualenv #如果沒有才要裝
+virtualenv <<環境名稱>> #建立環境
+source <<環境名稱>>/bin/activate #進入環境
+```
+
+下載必要 package
+```
+pip install -r requirements.txt
+```
+
+客製化你的程式
 ``` python
 # user.py
 import main as m
