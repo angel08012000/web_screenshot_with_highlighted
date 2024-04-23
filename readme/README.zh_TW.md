@@ -82,7 +82,7 @@ path: setting/xxx.json
 }
 ```
 
-## 演算法
+## 工作流程
 1. 讀取參數檔的參數
 2. 判斷是用 url 還是 html 開啟網頁
 3. 利用 webdriver 開啟網頁
