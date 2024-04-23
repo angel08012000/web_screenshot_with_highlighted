@@ -81,7 +81,7 @@ path: setting/xxx.json
 }
 ```
 
-## Algorithm
+## Workflow
 1. Read parameters from the parameter file.
 2. Determine whether to open the webpage using a URL or HTML.
 3. Use the webdriver to open the webpage.
